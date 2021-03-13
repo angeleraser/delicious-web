@@ -18,7 +18,7 @@
 
 ```
 
-## 3. Ve al archivo main.scss y haz click en el boton de la barra inferior de vs code "Watch Sass":
+## 3. Ve al archivo main.scss en `/styles/scss` y haz click en el boton de la barra inferior de vs code "Watch Sass":
 
 ### 3.1 Esto creara una carpeta css dentro de `/styles` con un archivo css minificado.
 
