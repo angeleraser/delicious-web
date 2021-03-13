@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: map-get($breakpoints, "hd-desktop");
+  padding: 30px 20px;
+  font-family: $font-raleway;
+  margin: 0 auto;
+
+  &__logo {
+    font-size: $text-xl;
+    text-transform: uppercase;
+    color: $black;
+    font-weight: bold;
+  }
+
+  &__list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
+
+    &__item {
+      font-size: $text-md;
+      color: $black;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-right: 25px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

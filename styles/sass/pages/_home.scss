@@ -1,0 +1,259 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./../../assets/images/jpg/home-1.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.popular-recipes {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__content {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 132px 42px;
+
+    &__title {
+      font-size: $text-lg;
+      line-height: $line-height-s;
+      letter-spacing: $letter-spacing-ss;
+      font-family: $font-raleway;
+      font-weight: $text-bold;
+      text-transform: uppercase;
+      margin-bottom: 42px;
+      padding-bottom: 16px;
+      position: relative;
+      color: $black;
+
+      &::before {
+        position: absolute;
+        content: '';
+        height: 3px;
+        width: 75px;
+        background-color: $primary-green;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__description {
+      font-size: $text-s;
+      font-family: $font-lora;
+      line-height: $line-height-s;
+      letter-spacing: $letter-spacing-ss;
+      margin-bottom: 32px;
+      color: $black-two;
+      max-width: 550px;
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.recipe-types {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 28px;
+    row-gap: 36px;
+    padding: 132px 80px;
+    background-color: $light-grey;
+    
+    &__card {
+      position: relative;
+      padding-left: 55px;
+      
+      &__icon {
+        position: absolute;
+        font-size: 30px;
+        color: $black;
+        left: 0;
+      }
+
+      &__title {
+        font-size: $text-md;
+        letter-spacing: $letter-spacing-ss;
+        font-family: $font-raleway;
+        font-weight: $text-bold;
+        color: $black;
+        text-transform: uppercase;
+      }
+
+      &__description {
+        color: $brown-grey;
+        font-size: $text-ss;
+        font-family: $font-lora;
+        line-height: $line-height-s;
+        letter-spacing: $letter-spacing-ss;
+        margin-top: 12px;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.our-restaurants {
+  min-height: 95vh;
+  padding: 132px 20px;
+  align-items: center;
+  justify-content: center;
+
+  &__media {
+    position: relative;
+
+    .absolute-image {
+      position: absolute;
+      right: -75px;
+      top: -125px;
+    }
+  }
+
+  &__content {
+    margin-top: 64px;
+
+    &__title {
+      font-size: $text-lg;
+      line-height: $line-height-s;
+      letter-spacing: $letter-spacing-ss;
+      font-family: $font-raleway;
+      font-weight: $text-bold;
+      text-transform: uppercase;
+      margin-bottom: 42px;
+      padding-bottom: 16px;
+      position: relative;
+      color: $black;
+      text-align: center;
+
+      &::before {
+        position: absolute;
+        content: '';
+        height: 3px;
+        width: 75px;
+        background-color: $primary-green;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__description {
+      font-size: $text-s;
+      font-family: $font-lora;
+      line-height: $line-height-s;
+      letter-spacing: $letter-spacing-ss;
+      margin-bottom: 32px;
+      color: $brown-grey;
+      max-width: 750px;
+      text-align: center;
+    }
+  }
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.restaurant-quotes {
+  background-color: $lime-green;
+  padding: 148px 20px;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    font-size: $text-lg;
+    line-height: $line-height-s;
+    letter-spacing: $letter-spacing-ss;
+    font-family: $font-raleway;
+    font-weight: $text-bold;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+    padding-bottom: 16px;
+    position: relative;
+    color: $black;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      content: '';
+      height: 3px;
+      width: 75px;
+      background-color: $primary-green;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__description {
+    font-size: $text-lg;
+    font-family: $font-lora;
+    line-height: $line-height-md;
+    letter-spacing: $letter-spacing-md;
+    color: $black;
+    position: relative;
+    width: 90%;
+    max-width: 850px;
+    text-align: center;
+
+    .icon {
+      position: absolute;
+      color: #eef6d1;
+      font-size: $text-xl;
+
+      &__right {
+        right: -70px;
+        bottom: -20px;
+      }
+
+      &__left {
+        left: -70px;
+        top: -15px;
+      }
+    }
+  }
+
+  &__pagination {
+    align-items: center;
+    margin-top: 75px;
+
+    &__button {
+      padding: 10px 15px;
+      font-size: 26px;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      color: #eef6d1;
+      cursor: pointer;
+
+      &.is-next {
+        color: $white;
+      }
+    }
+  }
+}
