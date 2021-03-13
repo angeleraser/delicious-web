@@ -1,0 +1,50 @@
+.title-text {
+  font-family: $font-raleway;
+  font-size: $text-xl;
+  font-weight: $text-bold;
+  line-height: $line-height-s;
+  letter-spacing: $letter-spacing-lg;
+}
+
+.footer-heading {
+  font-family: $font-raleway;
+  font-size: $text-md;
+  font-weight: $text-bold;
+  line-height: $line-height-s;
+  letter-spacing: $letter-spacing-s;
+}
+
+.body-style {
+  font-family: $font-raleway;
+  font-size: $text-md;
+  font-weight: $text-bold;
+  line-height: $line-height-md;
+  letter-spacing: $letter-spacing-s;
+}
+
+.quotes {
+  font-family: $font-lora;
+  font-size: $text-lg;
+  font-style: italic;
+  font-weight: $text-regular;
+  letter-spacing: $letter-spacing-md;
+  line-height: $line-height-md;
+  text-align: center;
+}
+
+.body-text {
+  font-family: $font-lora;
+  font-size: $text-s;
+  font-weight: $text-regular;
+  letter-spacing: $letter-spacing-s;
+  line-height: $line-height-md;
+  text-align: center;
+}
+
+.footing {
+  font-family: $font-lora;
+  font-size: $text-ss;
+  font-weight: $text-regular;
+  letter-spacing: $letter-spacing-s;
+  line-height: $line-height-lg;
+}
