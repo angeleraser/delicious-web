@@ -292,6 +292,40 @@
       font-size: 11px;
     }
 
+    &__form__fieldset {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px 20px;
+      width: 100%;
+
+      &__label {
+        width: 100%;
+      }
+
+      &__label-textarea {
+        grid-column: span 3;
+      }
+
+      input {
+        height: 40px;
+        color: $brown-grey;
+        text-indent: 12px;
+      }
+
+      textarea {
+        padding: 12px;
+        width: 100%;
+        resize: none;
+        min-height: 112px;
+      }
+
+      &__label__input {
+        border: 1px solid $light-grey;
+        font-family: $font-lora;
+        width: 100%;
+      }
+    }
+
     @media screen and (max-width: map-get($breakpoints, "small" )) {
       padding: $padding-mobile;
     }
