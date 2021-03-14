@@ -1,0 +1,35 @@
+.related-post-item {
+  &__image {
+    width: 100%;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    margin-top: 20px;
+
+    &__title {
+      text-transform: uppercase;
+      font-size: $text-s;
+      color: $black-two;
+      font-weight: $text-bold;
+      font-family: $font-raleway;
+      margin-bottom: 8px;
+    }
+
+    &__date {
+      font-family: $font-lora;
+      font-size: $text-ss;
+      color: $brown-grey;
+
+      &__link {
+        text-decoration: none;
+        font-weight: $text-bold;
+        color: $dark-grey;
+      }
+    }
+  }
+}
