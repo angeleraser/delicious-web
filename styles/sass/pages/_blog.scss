@@ -3,10 +3,10 @@
 .blog-main-content {
   width: 100%;
   align-items: center;
+  padding-top: 118px;
   $max-width: 1086px;
   $padding-desktop: 0 72px;
   $padding-mobile: 0 36px;
-  padding-top: 118px;
 
   .post-container {
     width: 100%;
@@ -67,6 +67,10 @@
             font-weight: $text-medium;
             font-size: $text-ss;
             text-decoration: none;
+          }
+
+          &__item__link:hover {
+            color: $black-two;
           }
         }
 
@@ -265,6 +269,31 @@
     &__comments-wrapper {
       display: grid;
       gap: 30px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "small" )) {
+      padding: $padding-mobile;
+    }
+  }
+
+  .leave-comment {
+    width: 100%;
+    max-width: $max-width;
+    padding: $padding-desktop;
+
+    &__heading {
+      font-size: $text-s;
+      color: $black;
+      font-family: $font-raleway;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    &__helper-text {
+      font-size: 11px;
+      color: $brown-grey;
+      font-family: $font-lora;
+      font-weight: $text-bold;
     }
 
     @media screen and (max-width: map-get($breakpoints, "small" )) {
