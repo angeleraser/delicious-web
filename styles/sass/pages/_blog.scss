@@ -12,7 +12,7 @@
     max-width: $max-width;
 
     .post {
-      padding: $padding-mobile;
+      padding: $padding-desktop;
       margin-bottom: 26px;
 
       &__header {
@@ -81,6 +81,16 @@
           padding-bottom: 26px;
           margin-bottom: 26px;
           border-bottom: 1px solid $light-grey;
+
+          &__item {
+            &__link {
+              font-size: $text-md;
+            }
+          }
+
+          &__item:not(:last-child) {
+            margin-right: 20px;
+          }
         }
 
         &__author {
@@ -116,6 +126,9 @@
               top: 20px;
               left: 20px;
               height: 80px;
+              border: 3px solid $white;
+              box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.2);
+              margin-right: 0;
 
               &__name {
                 display: inline-block;
@@ -129,6 +142,8 @@
             @media screen and (max-width: map-get($breakpoints, "small" )) {
               position: static;
               z-index: 10;
+              width: 100px;
+              height: 100px;
 
               &__name {
                 display: none;
@@ -172,7 +187,7 @@
             }
 
             @media screen and (max-width: map-get($breakpoints, "small" )) {
-              padding: 26px;
+              padding: 16px 26px 26px;
               display: flex;
               flex-direction: column;
               align-items: center;
@@ -197,7 +212,7 @@
   .related-posts {
     width: 100%;
     max-width: $max-width;
-    padding: $padding-mobile;
+    padding: $padding-desktop;
 
     &__heading {
       font-size: $text-s;
@@ -225,6 +240,30 @@
 
     @media screen and (max-width: map-get($breakpoints, "medium" )) {
       align-items: center;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "small" )) {
+      padding: $padding-mobile;
+    }
+  }
+
+  .blog-comments {
+    width: 100%;
+    max-width: $max-width;
+    padding: $padding-desktop;
+    margin-bottom: 30px;
+
+    &__heading {
+      color: $black;
+      font-family: $font-raleway;
+      font-size: $text-s;
+      margin-bottom: 26px;
+      text-transform: uppercase;
+    }
+
+    &__comments-wrapper {
+      display: grid;
+      gap: 30px;
     }
 
     @media screen and (max-width: map-get($breakpoints, "small" )) {

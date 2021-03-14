@@ -1,0 +1,98 @@
+.comment-item {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+
+  &__author-image {
+    flex-shrink: 0;
+    margin-right: 20px;
+
+    img {
+      object-fit: cover;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "small" )) {
+      display: none;
+    }
+  }
+
+  &__content {
+    background-color: $light-grey;
+    padding: 12px;
+    color: $black-two;
+    position: relative;
+
+    &__text,
+    &__date {
+      font-size: $text-ss;
+    }
+
+    &__author {
+      font-size: $text-s;
+      display: flex;
+      align-items: center;
+
+      &__image {
+        display: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid $white;
+        box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.2);
+        margin-right: 6px;
+
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+
+        @media screen and (max-width: map-get($breakpoints, "small" )) {
+          display: inline-block;
+        }
+      }
+
+      &__name {
+        font-family: $font-raleway;
+        font-weight: $text-bold;
+        margin-right: 2.5px;
+        z-index: 10;
+      }
+
+      &__profession {
+        font-family: $font-lora;
+        margin-left: 2.5px;
+        z-index: 10;
+      }
+    }
+
+    &__text {
+      margin: 10px 0;
+      z-index: 10;
+      font-family: $font-lora;
+      line-height: $line-height-s;
+    }
+
+    &__date {
+      font-weight: $text-bold;
+      font-family: $font-raleway;
+    }
+  }
+
+  &__content::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: $light-grey;
+    position: absolute;
+    top: 12px;
+    left: 0;
+    transform: translateX(-25%) rotate(45deg);
+
+    @media screen and (max-width: map-get($breakpoints, "small" )) {
+      display: none;
+    }
+  }
+}
