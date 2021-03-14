@@ -6,6 +6,7 @@
   $max-width: 1086px;
   $padding-desktop: 0 72px;
   $padding-mobile: 0 36px;
+  padding-top: 118px;
 
   .post-container {
     width: 100%;
@@ -19,14 +20,14 @@
         font-family: $font-raleway;
 
         &__title {
-          font-size: $text-lg;
+          font-size: $text-xl;
           color: $black;
           margin-bottom: 8px;
         }
 
         &__date {
           font-size: $text-ss;
-          font-weight: $text-bold;
+          font-weight: $text-medium;
         }
       }
 
