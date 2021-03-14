@@ -5,7 +5,7 @@
   $padding-desktop: 0 72px;
   $padding-mobile: 0 36px;
   align-items: center;
-  padding-top: 118px;
+  padding: 118px 0;
   width: 100%;
 
   .post-container {
@@ -287,42 +287,78 @@
 
     &__helper-text {
       font-family: $font-lora;
-      font-weight: $text-bold;
+      font-weight: $text-medium;
       color: $brown-grey;
       font-size: 11px;
     }
 
-    &__form__fieldset {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 10px 20px;
-      width: 100%;
+    &__form {
+      margin-top: 24px;
 
-      &__label {
+      &__fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px 20px;
         width: 100%;
+
+        &__label {
+          width: 100%;
+
+          input {
+            height: 40px;
+            text-indent: 12px;
+          }
+
+          textarea {
+            padding: 12px;
+            width: 100%;
+            resize: none;
+            min-height: 140px;
+            outline: none;
+          }
+
+          &__input {
+            border: 1px solid $light-grey;
+            color: $brown-grey;
+            font-family: $font-lora;
+            font-size: 11px;
+            width: 100%;
+          }
+
+          &__input::placeholder {
+            color: $brown-grey;
+            font-weight: $text-medium;
+          }
+        }
+
+        &__label-textarea {
+          grid-column: span 3;
+        }
+
+        @media screen and (max-width: map-get($breakpoints, "medium" )) {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+
+          &__label-textarea,
+          &__label[for="website"] {
+            grid-column: span 2;
+          }
+        }
+
+        @media screen and (max-width: map-get($breakpoints, "small" )) {
+          grid-template-columns: 1fr;
+
+          &__label-textarea,
+          &__label[for="website"] {
+            grid-column: span 1;
+          }
+        }
       }
 
-      &__label-textarea {
-        grid-column: span 3;
-      }
-
-      input {
-        height: 40px;
-        color: $brown-grey;
-        text-indent: 12px;
-      }
-
-      textarea {
-        padding: 12px;
-        width: 100%;
-        resize: none;
-        min-height: 112px;
-      }
-
-      &__label__input {
-        border: 1px solid $light-grey;
-        font-family: $font-lora;
-        width: 100%;
+      .button {
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-size: $text-ss;
       }
     }
 

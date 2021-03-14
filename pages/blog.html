@@ -387,31 +387,37 @@
       <section class="leave-comment">
         <h2 class="leave-comment__heading">Leave a comment</h2>
         <span class="leave-comment__helper-text">
-          Your email addres will not be publisehd. Required fields are marked *
+          Your email addres will not be published. Required fields are marked *
         </span>
 
         <form class="leave-comment__form">
           <fieldset class="leave-comment__form__fieldset">
             <label for="name" class="leave-comment__form__fieldset__label">
               <input
+                required
                 id="name"
                 name="name"
+                placeholder="Name *"
                 type="text"
                 class="leave-comment__form__fieldset__label__input"
               />
             </label>
             <label for="email" class="leave-comment__form__fieldset__label">
               <input
+                required
                 id="email"
                 name="email"
+                placeholder="Email *"
                 type="text"
                 class="leave-comment__form__fieldset__label__input"
               />
             </label>
             <label for="website" class="leave-comment__form__fieldset__label">
               <input
+                required
                 id="website"
                 name="website"
+                placeholder="Website"
                 type="text"
                 class="leave-comment__form__fieldset__label__input"
               />
@@ -422,13 +428,19 @@
               class="leave-comment__form__fieldset__label leave-comment__form__fieldset__label-textarea"
             >
               <textarea
+                required
                 id="comment"
+                placeholder="Comment"
                 name="comment"
                 type="text"
                 class="leave-comment__form__fieldset__label__input"
               ></textarea>
             </label>
           </fieldset>
+
+          <button type="submit" class="button button--success">
+            Submit Comment
+          </button>
         </form>
       </section>
     </main>
@@ -525,6 +537,7 @@
             <form class="is-flex footer__content__list__form__form-wrapper">
               <label for="email">
                 <input
+                  required
                   type="email"
                   name="email"
                   id="email"
