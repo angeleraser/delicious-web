@@ -1,0 +1,38 @@
+.blog-main-content {
+  width: 100%;
+  align-items: center;
+}
+
+.post_container {
+  width: 100%;
+  max-width: 1086px;
+  .post {
+    &__header {
+      font-family: $font-raleway;
+
+      &__title {
+        font-size: $text-lg;
+        color: $black;
+        margin-bottom: 8px;
+      }
+
+      &__date {
+        font-size: $text-ss;
+        font-weight: $text-bold;
+      }
+    }
+
+    &__content {
+      padding: 28px 0 32px;
+
+      &__text {
+        font-family: $font-lora;
+        line-height: $line-height-s;
+      }
+
+      &__text:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
