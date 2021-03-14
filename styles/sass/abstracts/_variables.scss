@@ -4,7 +4,9 @@
 
 $black: #2e2e2e !default;
 $black-two: #333333 !default;
+$black-three: #242424 !default;
 $brown-grey: #999999 !default;
+$dark-grey: #545551 !default;
 $light-grey: #f2f2f2 !default;
 $white: #f6f6f6 !default;
 $primary-green: #65a605;
@@ -64,5 +66,5 @@ $breakpoints: (
   "medium": 768px,
   "large": 940px,
   "extra-large": 1280px,
-  "hd-desktop": 1680px
+  "hd-desktop": 1680px,
 ) !default;

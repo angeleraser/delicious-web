@@ -5,12 +5,15 @@
 @import "./base/fonts";
 @import "./base/reset";
 @import "./base/typography";
+
 @import "./base/_helpers";
 
 // Layout
 @import "./layout/header";
 
-// Components 
+@import "./layout/footer";
+
+// Components
 @import "./components/button";
 
 // Pages
