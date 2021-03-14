@@ -153,3 +153,17 @@ input,
 select {
   vertical-align: middle;
 }
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
