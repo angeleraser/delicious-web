@@ -78,6 +78,10 @@
       font-weight: $text-bold;
       font-family: $font-raleway;
     }
+
+    @media screen and (max-width: map-get($breakpoints, "small" )) {
+      padding: 20px 16px;
+    }
   }
 
   &__content::before {

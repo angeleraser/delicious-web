@@ -1,12 +1,12 @@
 @use "sass:map";
 
 .blog-main-content {
-  width: 100%;
-  align-items: center;
   $max-width: 1086px;
   $padding-desktop: 0 72px;
   $padding-mobile: 0 36px;
-  padding-top: 118px;
+  align-items: center;
+  padding: 118px 0;
+  width: 100%;
 
   .post-container {
     width: 100%;
@@ -36,7 +36,7 @@
 
         &__text {
           font-family: $font-lora;
-          color: $black-two;
+          color: $brown-grey;
           line-height: $line-height-s;
         }
 
@@ -175,7 +175,7 @@
             &__author-description {
               font-size: $text-ss;
               font-family: $font-lora;
-              color: $black-two;
+              color: $brown-grey;
               line-height: $line-height-s;
 
               @media screen and (max-width: map-get($breakpoints, "medium" )) {
@@ -265,6 +265,101 @@
     &__comments-wrapper {
       display: grid;
       gap: 30px;
+    }
+
+    @media screen and (max-width: map-get($breakpoints, "small" )) {
+      padding: $padding-mobile;
+    }
+  }
+
+  .leave-comment {
+    width: 100%;
+    max-width: $max-width;
+    padding: $padding-desktop;
+
+    &__heading {
+      color: $black;
+      font-family: $font-raleway;
+      font-size: $text-s;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+    }
+
+    &__helper-text {
+      font-family: $font-lora;
+      font-weight: $text-medium;
+      color: $brown-grey;
+      font-size: 11px;
+    }
+
+    &__form {
+      margin-top: 24px;
+
+      &__fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px 20px;
+        width: 100%;
+
+        &__label {
+          width: 100%;
+
+          input {
+            height: 40px;
+            text-indent: 12px;
+          }
+
+          textarea {
+            padding: 12px;
+            width: 100%;
+            resize: none;
+            min-height: 140px;
+            outline: none;
+          }
+
+          &__input {
+            border: 1px solid $light-grey;
+            color: $brown-grey;
+            font-family: $font-lora;
+            font-size: 11px;
+            width: 100%;
+          }
+
+          &__input::placeholder {
+            color: $brown-grey;
+            font-weight: $text-medium;
+          }
+        }
+
+        &__label-textarea {
+          grid-column: span 3;
+        }
+
+        @media screen and (max-width: map-get($breakpoints, "medium" )) {
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+
+          &__label-textarea,
+          &__label[for="website"] {
+            grid-column: span 2;
+          }
+        }
+
+        @media screen and (max-width: map-get($breakpoints, "small" )) {
+          grid-template-columns: 1fr;
+
+          &__label-textarea,
+          &__label[for="website"] {
+            grid-column: span 1;
+          }
+        }
+      }
+
+      .button {
+        text-transform: uppercase;
+        margin-top: 20px;
+        font-size: $text-ss;
+      }
     }
 
     @media screen and (max-width: map-get($breakpoints, "small" )) {
