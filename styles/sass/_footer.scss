@@ -41,8 +41,12 @@
         color: $white;
       }
 
-      &__item:not(:last-child) {
+      &__item {
         border-bottom: 1px solid $brown-grey;
+
+        &:last-child {
+          border-bottom: none;
+        }
       }
 
       &__heading {
@@ -105,11 +109,13 @@
         .social-networks {
           display: flex;
 
-          &__item:not(:last-child) {
-            margin-right: 12px;
-          }
-
           &__item {
+            margin-right: 12px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
             &__link {
               font-size: $text-s;
             }

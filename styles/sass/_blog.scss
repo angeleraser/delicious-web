@@ -37,10 +37,11 @@
           color: $brown-grey;
           line-height: $line-height-s;
           letter-spacing: $letter-spacing-md;
-        }
-
-        &__text:not(:last-child) {
           margin-bottom: 30px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
       }
 
@@ -83,13 +84,15 @@
           border-bottom: 1px solid $light-grey;
 
           &__item {
+            margin-right: 20px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+
             &__link {
               font-size: $text-md;
             }
-          }
-
-          &__item:not(:last-child) {
-            margin-right: 20px;
           }
         }
 
