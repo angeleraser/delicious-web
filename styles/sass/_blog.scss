@@ -36,6 +36,7 @@
           font-family: $font-lora;
           color: $brown-grey;
           line-height: $line-height-s;
+          letter-spacing: $letter-spacing-md;
         }
 
         &__text:not(:last-child) {

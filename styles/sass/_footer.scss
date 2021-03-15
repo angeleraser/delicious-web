@@ -170,7 +170,7 @@
       }
     }
 
-    @media screen and (max-width: map-get($breakpoints, "small")) {
+    @media screen and (max-width: 480px) {
       padding: 72px 36px;
 
       &__list__form .social-networks {
