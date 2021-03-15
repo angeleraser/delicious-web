@@ -1,24 +1,24 @@
 // Abstracts or utilities
-@import "./abstracts/variables";
+@import "./variables";
 
 // Base
-@import "./base/fonts";
-@import "./base/reset";
-@import "./base/typography";
+@import "./fonts";
+@import "./reset";
+@import "./typography";
 
-@import "./base/_helpers";
+@import "./_helpers";
 
 // Layout
-@import "./layout/header";
+@import "./header";
 
-@import "./layout/footer";
+@import "./footer";
 
 // Components
-@import "./components/button";
-@import "./components/related-post";
-@import "./components/comment";
+@import "./button";
+@import "./related-post";
+@import "./comment";
 
 // Pages
-@import "./pages/home";
-@import "./pages/blog";
-@import "./pages/contact";
+@import "./home";
+@import "./blog";
+@import "./contact";
