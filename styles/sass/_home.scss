@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  @media screen and (max-width: map-get($breakpoints, "large")) {
+  @media screen and (max-width: 940px) {
     grid-template-columns: 1fr;
   }
 
@@ -23,7 +23,7 @@
     flex-direction: column;
     padding: 132px 42px;
 
-    @media screen and (max-width: map-get($breakpoints, "large")) {
+    @media screen and (max-width: 940px) {
       padding: 112px 20px;
     }
 
@@ -41,7 +41,7 @@
 
       &::before {
         position: absolute;
-        content: '';
+        content: "";
         height: 3px;
         width: 75px;
         background-color: $primary-green;
@@ -74,7 +74,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
-  @media screen and (max-width: map-get($breakpoints, "large")) {
+  @media screen and (max-width: 940px) {
     grid-template-columns: 1fr;
   }
 
@@ -86,33 +86,33 @@
     padding: 132px 80px;
     background-color: $light-grey;
 
-    @media screen and (max-width: map-get($breakpoints, "extra-large")) {
+    @media screen and (max-width: 1280px) {
       padding: 112px 35px;
     }
 
-    @media screen and (max-width: map-get($breakpoints, "large")) {
+    @media screen and (max-width: 940px) {
       padding: 112px 60px;
       order: 1;
     }
-    
-    @media screen and (max-width: map-get($breakpoints, "medium")) {
+
+    @media screen and (max-width: 768px) {
       grid-template-columns: 1fr;
       padding: 112px 20px;
     }
-    
+
     &__card {
       position: relative;
       padding-left: 55px;
 
-      @media screen and (max-width: map-get($breakpoints, "large")) {
+      @media screen and (max-width: 940px) {
         max-width: 280px;
         margin: 0 auto;
       }
 
-      @media screen and (max-width: map-get($breakpoints, "medium")) {
+      @media screen and (max-width: 768px) {
         max-width: 285px;
       }
-      
+
       &__icon {
         position: absolute;
         font-size: 30px;
@@ -145,7 +145,7 @@
     object-fit: cover;
     height: 100%;
 
-    @media screen and (max-width: map-get($breakpoints, "large")) {
+    @media screen and (max-width: 940px) {
       order: 2;
     }
   }
@@ -157,12 +157,12 @@
   align-items: center;
   justify-content: center;
 
-  @media screen and (max-width: map-get($breakpoints, "large")) {
+  @media screen and (max-width: 940px) {
     padding: 132px 60px 112px 60px;
     min-height: 85vh;
   }
 
-  @media screen and (max-width: map-get($breakpoints, "medium")) {
+  @media screen and (max-width: 768px) {
     padding: 112px 20px;
   }
 
@@ -170,7 +170,7 @@
     position: relative;
     display: flex;
 
-    @media screen and (max-width: map-get($breakpoints, "medium")) {
+    @media screen and (max-width: 768px) {
       width: 90%;
       max-width: 285px;
     }
@@ -184,7 +184,7 @@
       right: -75px;
       top: -125px;
 
-      @media screen and (max-width: map-get($breakpoints, "large")) {
+      @media screen and (max-width: 940px) {
         width: 127px;
         right: -45px;
         top: -77px;
@@ -210,7 +210,7 @@
 
       &::before {
         position: absolute;
-        content: '';
+        content: "";
         height: 3px;
         width: 75px;
         background-color: $primary-green;
@@ -237,7 +237,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
-  @media screen and (max-width: map-get($breakpoints, "large")) {
+  @media screen and (max-width: 940px) {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -254,7 +254,7 @@
   justify-content: center;
   overflow: hidden;
 
-  @media screen and (max-width: map-get($breakpoints, "large")) {
+  @media screen and (max-width: 940px) {
     padding: 112px 20px;
   }
 
@@ -271,13 +271,13 @@
     color: $black;
     text-align: center;
 
-    @media screen and (max-width: map-get($breakpoints, "large")) {
+    @media screen and (max-width: 940px) {
       margin-bottom: 32px;
     }
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       height: 3px;
       width: 75px;
       background-color: $primary-green;
@@ -298,11 +298,11 @@
     max-width: 850px;
     text-align: center;
 
-    @media screen and (max-width: map-get($breakpoints, "extra-large")) {
+    @media screen and (max-width: 1280px) {
       max-width: 700px;
     }
 
-    @media screen and (max-width: map-get($breakpoints, "large")) {
+    @media screen and (max-width: 940px) {
       font-size: 16px;
       line-height: 24px;
       max-width: 480px;
@@ -313,7 +313,7 @@
       color: #eef6d1;
       font-size: $text-xl;
 
-      @media screen and (max-width: map-get($breakpoints, "large")) {
+      @media screen and (max-width: 940px) {
         font-size: 32px;
       }
 
@@ -321,7 +321,7 @@
         right: -70px;
         bottom: -20px;
 
-        @media screen and (max-width: map-get($breakpoints, "large")) {
+        @media screen and (max-width: 940px) {
           right: -32px;
           bottom: -15px;
         }
@@ -331,7 +331,7 @@
         left: -70px;
         top: -15px;
 
-        @media screen and (max-width: map-get($breakpoints, "large")) {
+        @media screen and (max-width: 940px) {
           left: -32px;
           top: -15px;
         }
@@ -343,7 +343,7 @@
     align-items: center;
     margin-top: 75px;
 
-    @media screen and (max-width: map-get($breakpoints, "large")) {
+    @media screen and (max-width: 940px) {
       margin-top: 35px;
     }
 

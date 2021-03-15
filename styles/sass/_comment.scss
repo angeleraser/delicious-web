@@ -11,7 +11,7 @@
       object-fit: cover;
     }
 
-    @media screen and (max-width: map-get($breakpoints, "small" )) {
+    @media screen and (max-width: 480px) {
       display: none;
     }
   }
@@ -48,7 +48,7 @@
           height: 100%;
         }
 
-        @media screen and (max-width: map-get($breakpoints, "small" )) {
+        @media screen and (max-width: 480px) {
           display: inline-block;
         }
       }
@@ -79,7 +79,7 @@
       font-family: $font-raleway;
     }
 
-    @media screen and (max-width: map-get($breakpoints, "small" )) {
+    @media screen and (max-width: 480px) {
       padding: 20px 16px;
     }
   }
@@ -95,7 +95,7 @@
     left: 0;
     transform: translateX(-25%) rotate(45deg);
 
-    @media screen and (max-width: map-get($breakpoints, "small" )) {
+    @media screen and (max-width: 480px) {
       display: none;
     }
   }

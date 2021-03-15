@@ -2,13 +2,13 @@
 // Color Palette
 // -----------------------------------------------------------------------------
 
-$black: #2e2e2e !default;
-$black-two: #333333 !default;
-$black-three: #242424 !default;
-$brown-grey: #999999 !default;
-$dark-grey: #545551 !default;
-$light-grey: #f2f2f2 !default;
-$white: #f6f6f6 !default;
+$black: #2e2e2e;
+$black-two: #333333;
+$black-three: #242424;
+$brown-grey: #999999;
+$dark-grey: #545551;
+$light-grey: #f2f2f2;
+$white: #f6f6f6;
 $primary-green: #65a605;
 $lime-green: #dded9a;
 
@@ -16,18 +16,18 @@ $lime-green: #dded9a;
 // Font Family
 // -----------------------------------------------------------------------------
 
-$font-raleway: "Raleway", sans-serif !default;
-$font-lora: "Lora", sans-serif !default;
+$font-raleway: "Raleway", sans-serif;
+$font-lora: "Lora", sans-serif;
 
 // -----------------------------------------------------------------------------
 // Font Sizes
 // -----------------------------------------------------------------------------
 
-$text-ss: 13px !default;
-$text-s: 14px !default;
-$text-md: 18px !default;
-$text-lg: 24px !default;
-$text-xl: 48px !default;
+$text-ss: 13px;
+$text-s: 14px;
+$text-md: 18px;
+$text-lg: 24px;
+$text-xl: 48px;
 
 // -----------------------------------------------------------------------------
 // Font Weights
@@ -54,17 +54,3 @@ $line-height-ss: 18px;
 $line-height-s: 24px;
 $line-height-md: 36px;
 $line-height-lg: 44px;
-
-// -----------------------------------------------------------------------------
-// Breakpoints
-// -----------------------------------------------------------------------------
-
-/// @prop {String} keys - Keys are identifiers mapped to a given length
-/// @prop {Map} values - Values are actual breakpoints expressed in pixels
-$breakpoints: (
-  "small": 480px,
-  "medium": 768px,
-  "large": 940px,
-  "extra-large": 1280px,
-  "hd-desktop": 1680px,
-) !default;
