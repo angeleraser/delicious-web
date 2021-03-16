@@ -21,6 +21,7 @@
           font-size: $text-xl;
           color: $black;
           margin-bottom: 8px;
+          font-weight: 700;
         }
 
         &__date {
@@ -284,6 +285,7 @@
       font-family: $font-raleway;
       font-size: $text-s;
       margin-bottom: 8px;
+      font-weight: 700;
       text-transform: uppercase;
     }
 
@@ -302,13 +304,14 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px 20px;
         width: 100%;
+        border: none;
 
         &__label {
           width: 100%;
 
           input {
             height: 40px;
-            text-indent: 12px;
+            padding-left: 12px;
           }
 
           textarea {
@@ -325,6 +328,7 @@
             font-family: $font-lora;
             font-size: 11px;
             width: 100%;
+            outline: none;
           }
 
           &__input::placeholder {
