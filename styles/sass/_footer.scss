@@ -187,6 +187,10 @@
       &__list.recent-posts {
         margin: 32px 0;
       }
+
+      &__list.recent-posts:last-child {
+        margin-top: 30px;
+      }
     }
 
     @media screen and (max-width: 480px) {
