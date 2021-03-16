@@ -18,15 +18,15 @@
         font-family: $font-raleway;
 
         &__title {
-          font-size: $text-xl;
+          font-size: 48px;
           color: $black;
           margin-bottom: 8px;
           font-weight: 700;
         }
 
         &__date {
-          font-size: $text-ss;
-          font-weight: $text-medium;
+          font-size: 13px;
+          font-weight: 500;
         }
       }
 
@@ -36,8 +36,8 @@
         &__text {
           font-family: $font-lora;
           color: $brown-grey;
-          line-height: $line-height-s;
-          letter-spacing: $letter-spacing-md;
+          line-height: 24px;
+          letter-spacing: 0.3px;
           margin-bottom: 30px;
 
           &:last-child {
@@ -57,7 +57,7 @@
           &__heading {
             color: $black;
             font-family: $font-raleway;
-            font-weight: $text-bold;
+            font-weight: 700;
             margin-right: 6px;
             line-height: 0.9;
           }
@@ -65,9 +65,13 @@
           &__item__link {
             color: $brown-grey;
             font-family: $font-lora;
-            font-weight: $text-medium;
-            font-size: $text-ss;
+            font-weight: 500;
+            font-size: 13px;
             text-decoration: none;
+          }
+
+          &__item__link:hover {
+            color: $black-two;
           }
         }
 
@@ -92,7 +96,7 @@
             }
 
             &__link {
-              font-size: $text-md;
+              font-size: 18px;
             }
           }
         }
@@ -110,8 +114,9 @@
             &__name {
               color: $black;
               font-family: $font-raleway;
-              font-size: $text-ss;
+              font-size: 13px;
               text-align: center;
+              font-weight: 700;
               margin-top: 8px;
               display: none;
               text-transform: uppercase;
@@ -160,10 +165,11 @@
             background-color: $light-grey;
 
             &__author-name {
-              font-size: $text-s;
+              font-size: 14px;
               font-family: $font-raleway;
               text-transform: uppercase;
               color: $black;
+              font-weight: 700;
               margin-bottom: 14px;
 
               @media screen and (max-width: 768px) {
@@ -176,10 +182,10 @@
             }
 
             &__author-description {
-              font-size: $text-ss;
+              font-size: 13px;
               font-family: $font-lora;
               color: $brown-grey;
-              line-height: $line-height-s;
+              line-height: 24px;
 
               @media screen and (max-width: 768px) {
                 text-align: justify;
@@ -219,9 +225,10 @@
     padding: $padding-desktop;
 
     &__heading {
-      font-size: $text-s;
+      font-size: 14px;
       color: $black;
       margin-bottom: 20px;
+      font-weight: 700;
       font-family: $font-raleway;
     }
 
@@ -260,8 +267,9 @@
     &__heading {
       color: $black;
       font-family: $font-raleway;
-      font-size: $text-s;
+      font-size: 14px;
       margin-bottom: 26px;
+      font-weight: 700;
       text-transform: uppercase;
     }
 
@@ -283,7 +291,7 @@
     &__heading {
       color: $black;
       font-family: $font-raleway;
-      font-size: $text-s;
+      font-size: 14px;
       margin-bottom: 8px;
       font-weight: 700;
       text-transform: uppercase;
@@ -291,7 +299,7 @@
 
     &__helper-text {
       font-family: $font-lora;
-      font-weight: $text-medium;
+      font-weight: 500;
       color: $brown-grey;
       font-size: 11px;
     }
@@ -333,7 +341,7 @@
 
           &__input::placeholder {
             color: $brown-grey;
-            font-weight: $text-medium;
+            font-weight: 500;
           }
         }
 
@@ -364,7 +372,7 @@
       .button {
         text-transform: uppercase;
         margin-top: 20px;
-        font-size: $text-ss;
+        font-size: 13px;
       }
     }
 

@@ -24,11 +24,11 @@
     }
 
     &__title {
-      font-size: $text-lg;
-      line-height: $line-height-s;
-      letter-spacing: $letter-spacing-ss;
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
       font-family: $font-raleway;
-      font-weight: $text-bold;
+      font-weight: 700;
       text-transform: uppercase;
       position: relative;
       color: $black;
@@ -106,7 +106,7 @@
         background-color: transparent;
         color: $primary-green;
         text-transform: uppercase;
-        font-weight: $text-medium;
+        font-weight: 500;
         font-size: 16px;
 
         .icon {
@@ -134,21 +134,21 @@
       }
 
       &__title {
-        font-size: $text-lg;
-        line-height: $line-height-s;
-        letter-spacing: $letter-spacing-ss;
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
         font-family: $font-raleway;
-        font-weight: $text-bold;
+        font-weight: 700;
         text-transform: uppercase;
         color: $black;
         margin-bottom: 40px;
       }
 
       &__description {
-        font-size: $text-s;
+        font-size: 14px;
         font-family: $font-lora;
-        line-height: $line-height-s;
-        letter-spacing: $letter-spacing-ss;
+        line-height: 24px;
+        letter-spacing: 0.3px;
         color: $black-two;
         max-width: 300px;
       }
@@ -164,30 +164,30 @@
       }
 
       &__title {
-        font-size: $text-md;
-        line-height: $line-height-s;
-        letter-spacing: $letter-spacing-ss;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
         font-family: $font-raleway;
-        font-weight: $text-bold;
+        font-weight: 700;
         text-transform: uppercase;
         color: $black;
         margin-bottom: 20px;
       }
 
       &__hours {
-        font-size: $text-s;
+        font-size: 14px;
         font-family: $font-lora;
-        line-height: $line-height-s;
-        letter-spacing: $letter-spacing-ss;
+        line-height: 24px;
+        letter-spacing: 0.3px;
         color: $black-two;
         max-width: 300px;
       }
 
       &__message {
-        font-size: $text-s;
+        font-size: 14px;
         font-family: $font-lora;
-        line-height: $line-height-s;
-        letter-spacing: $letter-spacing-ss;
+        line-height: 24px;
+        letter-spacing: 0.3px;
         color: $brown-grey;
         max-width: 300px;
       }
@@ -203,11 +203,11 @@
       }
 
       &__title {
-        font-size: $text-md;
-        line-height: $line-height-s;
-        letter-spacing: $letter-spacing-ss;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.3px;
         font-family: $font-raleway;
-        font-weight: $text-bold;
+        font-weight: 700;
         text-transform: uppercase;
         color: $black;
         margin-bottom: 20px;
@@ -216,10 +216,10 @@
       &__city,
       &__email,
       &__phone {
-        font-size: $text-s;
+        font-size: 14px;
         font-family: $font-lora;
-        line-height: $line-height-s;
-        letter-spacing: $letter-spacing-ss;
+        line-height: 24px;
+        letter-spacing: 0.3px;
         color: $brown-grey;
         max-width: 300px;
       }

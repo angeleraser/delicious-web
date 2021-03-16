@@ -28,11 +28,11 @@
     }
 
     &__title {
-      font-size: $text-lg;
-      line-height: $line-height-s;
-      letter-spacing: $letter-spacing-ss;
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
       font-family: $font-raleway;
-      font-weight: $text-bold;
+      font-weight: 700;
       text-transform: uppercase;
       margin-bottom: 42px;
       padding-bottom: 16px;
@@ -52,10 +52,10 @@
     }
 
     &__description {
-      font-size: $text-s;
+      font-size: 14px;
       font-family: $font-lora;
-      line-height: $line-height-s;
-      letter-spacing: $letter-spacing-ss;
+      line-height: 24px;
+      letter-spacing: 0.3px;
       margin-bottom: 32px;
       color: $black-two;
       max-width: 550px;
@@ -121,20 +121,20 @@
       }
 
       &__title {
-        font-size: $text-md;
-        letter-spacing: $letter-spacing-ss;
+        font-size: 18px;
+        letter-spacing: 0.3px;
         font-family: $font-raleway;
-        font-weight: $text-bold;
+        font-weight: 700;
         color: $black;
         text-transform: uppercase;
       }
 
       &__description {
         color: $brown-grey;
-        font-size: $text-ss;
+        font-size: 13px;
         font-family: $font-lora;
-        line-height: $line-height-s;
-        letter-spacing: $letter-spacing-ss;
+        line-height: 24px;
+        letter-spacing: 0.3px;
         margin-top: 12px;
       }
     }
@@ -196,11 +196,11 @@
     margin-top: 64px;
 
     &__title {
-      font-size: $text-lg;
-      line-height: $line-height-s;
-      letter-spacing: $letter-spacing-ss;
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
       font-family: $font-raleway;
-      font-weight: $text-bold;
+      font-weight: 700;
       text-transform: uppercase;
       margin-bottom: 42px;
       padding-bottom: 16px;
@@ -221,10 +221,10 @@
     }
 
     &__description {
-      font-size: $text-s;
+      font-size: 14px;
       font-family: $font-lora;
-      line-height: $line-height-s;
-      letter-spacing: $letter-spacing-ss;
+      line-height: 24px;
+      letter-spacing: 0.3px;
       margin-bottom: 32px;
       color: $brown-grey;
       max-width: 750px;
@@ -259,11 +259,11 @@
   }
 
   &__title {
-    font-size: $text-lg;
-    line-height: $line-height-s;
-    letter-spacing: $letter-spacing-ss;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
     font-family: $font-raleway;
-    font-weight: $text-bold;
+    font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 42px;
     padding-bottom: 16px;
@@ -288,10 +288,10 @@
   }
 
   &__description {
-    font-size: $text-lg;
+    font-size: 24px;
     font-family: $font-lora;
-    line-height: $line-height-md;
-    letter-spacing: $letter-spacing-md;
+    line-height: 36px;
+    letter-spacing: 0.6px;
     color: $black;
     position: relative;
     width: 90%;
@@ -311,7 +311,7 @@
     .icon {
       position: absolute;
       color: #eef6d1;
-      font-size: $text-xl;
+      font-size: 48px;
 
       @media screen and (max-width: 940px) {
         font-size: 32px;

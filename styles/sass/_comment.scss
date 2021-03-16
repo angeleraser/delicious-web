@@ -19,16 +19,17 @@
   &__content {
     background-color: $light-grey;
     padding: 12px;
-    color: $black-two;
+    color: $black;
     position: relative;
 
     &__text,
     &__date {
-      font-size: $text-ss;
+      font-size: 13px;
+      letter-spacing: 0.3px;
     }
 
     &__author {
-      font-size: $text-s;
+      font-size: 14px;
       display: flex;
       align-items: center;
 
@@ -55,7 +56,7 @@
 
       &__name {
         font-family: $font-raleway;
-        font-weight: $text-bold;
+        font-weight: 700;
         margin-right: 2.5px;
         z-index: 10;
       }
@@ -71,11 +72,12 @@
       margin: 10px 0;
       z-index: 10;
       font-family: $font-lora;
-      line-height: $line-height-s;
+      font-weight: 500;
+      line-height: 24px;
     }
 
     &__date {
-      font-weight: $text-bold;
+      font-weight: 700;
       font-family: $font-raleway;
     }
 

@@ -13,9 +13,9 @@
 
     &__title {
       text-transform: uppercase;
-      font-size: $text-s;
+      font-size: 14px;
       color: $black-two;
-      font-weight: $text-bold;
+      font-weight: 700;
       font-family: $font-raleway;
       margin-bottom: 8px;
     }
@@ -27,7 +27,7 @@
 
       &__link {
         text-decoration: none;
-        font-weight: $text-bold;
+        font-weight: 700;
         font-family: $font-raleway;
         color: $dark-grey;
       }

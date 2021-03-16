@@ -17,7 +17,7 @@
   }
 
   &__logo {
-    font-size: $text-xl;
+    font-size: 48px;
     text-transform: uppercase;
     color: $black;
     font-weight: bold;
@@ -42,14 +42,14 @@
     }
 
     &__item {
-      font-size: $text-md;
+      font-size: 18px;
       color: $black;
       text-transform: uppercase;
       font-weight: bold;
       margin-right: 25px;
 
       @media screen and (max-width: 940px) {
-        font-size: $text-s;
+        font-size: 14px;
         margin-right: 16px;
       }
 
