@@ -90,8 +90,10 @@
             background-color: #545551;
             color: $brown-grey;
             font-family: $font-lora;
-            text-indent: 14px;
+            padding-left: 12px;
             font-size: 13px;
+            border: none;
+            outline: none;
           }
 
           input::placeholder {
@@ -102,6 +104,9 @@
             width: 40px;
             background-color: $primary-green;
             color: $white;
+            border: none;
+            outline: none;
+            cursor: pointer;
           }
         }
 
