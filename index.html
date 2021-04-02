@@ -4,8 +4,436 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/css/main.min.css" />
+    <!--Style Css Link-->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/e25c9e9fc4.js" crossorigin="anonymous"></script>
     <title>Home</title>
   </head>
-  <body></body>
+  <body>
+    <section class="hero">
+      <header class="header is-flex">
+        <span class="header__logo">
+          Delicious
+        </span>
+        <!--Main  -->
+        <ul id="menu-list" class="header__list">
+          <li class="header__list__item is-active">
+            Home
+          </li>
+          <li class="header__list__item">
+            About
+          </li>
+          <li class="header__list__item">
+            Recipes
+          </li>
+          <li class="header__list__item">
+            Nutrition
+          </li>
+          <li class="header__list__item">
+            <a href="./pages/blog.html">Blog</a>
+          </li>
+          <li class="header__list__item">
+            Shop
+          </li>
+          <li class="header__list__item">
+            <a href="./pages/contact.html">Contact</a>
+          </li>
+          <li class="header__list__item is-shopping-bag">
+            <i class="fas fa-shopping-bag"></i>
+            <div class="count">
+              2
+            </div>
+          </li>
+          <li class="header__list__item is-search">
+            <i class="fas fa-search"></i>
+          </li>
+        </ul>
+        <!--Main burger menu  -->
+        <button id='menu-button' class="burger-button">
+          <i class="fas fa-bars"></i>
+        </button>
+      </header>
+    </section>
+    <!--Popular Recipes  -->
+    <section class="popular-recipes">
+      <div class="popular-recipes__content">
+        <h2 class="popular-recipes__content__title">
+          Most popular recipes
+        </h2>
+        <p class="popular-recipes__content__description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Praesentium commodi voluptate, ipsum delectus quia nemo vel,
+          omnis assumenda deserunt numquam quisquam facilis esse
+          consequatur aliquam?
+        </p>
+        <button class="button button--success">
+          View recipes
+        </button>
+      </div>
+      <!--Popular Recipes image  -->
+      <img src="./assets/images/jpg/home-2.jpeg" alt="Most popular recipes" />
+    </section>
+    <!--Recipe types image   -->
+    <section class="recipe-types">
+      <img src="./assets/images/jpg/home-3.jpeg" alt="Type of recipes" />
+      <!--Recipe types content   -->
+      <div class="recipe-types__content">
+        <div class="recipe-types__content__card">
+          <span class="recipe-types__content__card__icon">
+            <i class="fas fa-lemon"></i>
+          </span>
+          <h3 class="recipe-types__content__card__title">
+            Vegetarian
+          </h3>
+          <p class="recipe-types__content__card__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Eos architecto rem aspernatur dolorem illum
+          </p>
+        </div>
+        <!--Recipe types content card   -->
+        <div class="recipe-types__content__card">
+          <span class="recipe-types__content__card__icon">
+            <i class="fas fa-utensils"></i>
+          </span>
+          <h3 class="recipe-types__content__card__title">
+            Appetizers
+          </h3>
+          <p class="recipe-types__content__card__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Eos architecto rem aspernatur dolorem illum
+          </p>
+        </div>
+        <!--Recipe types content card   -->
+        <div class="recipe-types__content__card">
+          <span class="recipe-types__content__card__icon">
+            <i class="fas fa-coffee"></i>
+          </span>
+          <h3 class="recipe-types__content__card__title">
+            Desserts
+          </h3>
+          <p class="recipe-types__content__card__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Eos architecto rem aspernatur dolorem illum
+          </p>
+        </div>
+        <!--Recipe types content card    -->
+        <div class="recipe-types__content__card">
+          <span class="recipe-types__content__card__icon">
+            <i class="fas fa-glass-martini"></i>
+          </span>
+          <h3 class="recipe-types__content__card__title">
+            Drinks
+          </h3>
+          <p class="recipe-types__content__card__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Eos architecto rem aspernatur dolorem illum
+          </p>
+        </div>
+        <!--Recipe types content card   -->
+        <div class="recipe-types__content__card">
+          <span class="recipe-types__content__card__icon">
+            <i class="fas fa-leaf"></i>
+          </span>
+          <h3 class="recipe-types__content__card__title">
+            Salads
+          </h3>
+          <p class="recipe-types__content__card__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Eos architecto rem aspernatur dolorem illum
+          </p>
+        </div>
+        <!--Recipe types content card last   -->
+        <div class="recipe-types__content__card">
+          <span class="recipe-types__content__card__icon">
+            <i class="fas fa-utensil-spoon"></i>
+          </span>
+          <h3 class="recipe-types__content__card__title">
+            Side dishes
+          </h3>
+          <p class="recipe-types__content__card__description">
+            Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Eos architecto rem aspernatur dolorem illum
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Our Restaurants Absolute & relative   -->
+    <section class="our-restaurants is-flex is-flex--column">
+      <div class="our-restaurants__media is-flex">
+        <img
+          src="./assets/images/jpg/home-4.jpeg"
+          alt="Our restaurants"
+          class="main-image"
+        />
+        <img
+          src="./assets/images/png/home-circle-text.png"
+          alt="Fancy food place"
+          class="absolute-image"
+        />
+      </div>
+      <!--Our restaurants content   -->
+      <div class="our-restaurants__content">
+        <h2 class="our-restaurants__content__title">
+          Our restaurants
+        </h2>
+        <!--Our restaurants description   -->
+        <p class="our-restaurants__content__description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Veritatis dolore molestias magni rerum, officiis quisquam.
+          Veritatis dolore molestias magni rerum, officiis quisquam. agni rerum, officiis quisquam.
+        </p>
+      </div>
+    </section>
+    <!--Gallery section   -->
+    <section class="gallery-images">
+      <img src="./assets/images/jpg/home-5.jpeg" />
+      <img src="./assets/images/jpg/home-6.jpeg" />
+      <img src="./assets/images/jpg/home-7.jpeg" />
+      <img src="./assets/images/jpg/home-8.jpeg" />
+      <img src="./assets/images/jpg/home-9.jpeg" />
+      <img src="./assets/images/jpg/home-10.jpeg" />
+    </section>
+    <!--Hungry clients quote   -->
+    <section id="quotes-section" class="restaurant-quotes is-flex is-flex--column">
+      <h2 class="restaurant-quotes__title">
+        Hungry clients
+      </h2>
+      <p class="restaurant-quotes__description">
+        <i class="fas fa-quote-left icon icon__left"></i>
+        <span id='quote-text'>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta sunt quam sit, exercitationem dolor corrupti asperiores deserunt eligendi ad nobis expedita. Velit error molestiae soluta necessitatibus id ducimus deserunt quod!
+        </span>
+        <i class="fas fa-quote-right icon icon__right"></i>
+      </p>
+      <!--HC chevrons   -->
+      <div class="restaurant-quotes__pagination">
+        <button id='prev-quote-btn' class="restaurant-quotes__pagination__button is-prev">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <!--HC chevrons   -->
+        <button id='next-quote-btn' class="restaurant-quotes__pagination__button is-next">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+    <!--Footer Section first   -->
+    <footer class="footer is-flex is-flex--column">
+      <section class="footer__content is-flex">
+        <ul class="footer__content__list is-flex--column is-flex">
+          <h2 class="footer__content__list__heading app-name footer-heading">
+            DELICIOUS
+          </h2>
+          <li class="footing footer__content__list__item">
+            Soko radicchio bunya nuts gram dulse silver beet parnsip napa
+            cabbage lotus root sea lettuce brussels srpout cabbage.
+          </li>
+          <li class="footing footer__content__list__item">
+            A delicious restaurant Toronto, Ontario
+          </li>
+          <li class="footing footer__content__list__item">yum@food.com</li>
+          <li class="footing footer__content__list__item">+1 234 567 8910</li>
+        </ul>
+        <!--Footer Section second   -->
+        <ul class="recent-posts footer__content__list is-flex--column is-flex">
+          <h2 class="footer__content__list__heading footer-heading">
+            RECENT POSTS
+          </h2>
+          <li class="footing footer__content__list__item">
+            <a
+              class="footer__content__list__item__link"
+              href="#"              
+              rel="noopener noreferrer"
+              >Beetrot water spinach okra water</a
+            >
+          </li>
+          <li class="footing footer__content__list__item">
+            <a
+              class="footer__content__list__item__link"
+              href="#"              
+              rel="noopener noreferrer"
+              >Chesnut riebean pea catsear courgette</a
+            >
+          </li>
+          <li class="footing footer__content__list__item">
+            <a
+              class="footer__content__list__item__link"
+              href="#"              
+              rel="noopener noreferrer"
+              >Summer purslane spinach arugula pea</a
+            >
+          </li>
+          <li class="footing footer__content__list__item">
+            <a
+              class="footer__content__list__item__link"
+              href="#"              
+              rel="noopener noreferrer"
+              >Tatsol aubergine spring onion bush</a
+            >
+          </li>
+          <li class="footing footer__content__list__item">
+            <a
+              class="footer__content__list__item__link"
+              href="#"              
+              rel="noopener noreferrer"
+              >Tomato kale radicchio turnip chicory</a
+            >
+          </li>
+          <li class="footing footer__content__list__item">
+            <a
+              class="footer__content__list__item__link"
+              href="#"              
+              rel="noopener noreferrer"
+              >Salsify pea sprouts fava bean</a
+            >
+          </li>
+        </ul>
+        <!--Footer Section third   -->
+        <ul
+          class="footer__content__list__form footer__content__list is-flex--column is-flex"
+        >
+          <h2 class="footer__content__list__heading footer-heading">
+            SUBSCRIBE NOW
+          </h2>
+          <!--Footer Section third top   -->
+          <li class="is-flex is-flex--column footer__content__list__form__item">
+            <p class="footer__content__list__form__text">
+              Get all of our newest recipes inmediately at your inbox
+            </p>
+            <!--Footer Section third form   -->
+            <form id="footer-form-element" class="is-flex footer__content__list__form__form-wrapper">
+              <label for="email">
+                <input
+                  type="email"
+                  name="email"
+                  id="footer-email-input"
+                  placeholder="Enter your email"
+                />
+                <span class="invalid-msg">          
+                </span>
+              </label>
+              <button><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+            <!--Footer Section social network   -->
+            <ul class="social-networks">
+              <li class="social-networks__item">
+                <a
+                  class="footer__content__list__item__link social-networks__item__link"
+                  href="http://facebook.com"                  
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="social-networks__item">
+                <a
+                  class="footer__content__list__item__link social-networks__item__link"
+                  href="http://twitter.com"                  
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="social-networks__item">
+                <a
+                  class="footer__content__list__item__link social-networks__item__link"
+                  href="http://twitter.com"                  
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!--Footer Section copyright   -->
+      <section class="footer__copyright is-flex is-flex--column">
+        <p class="footer__copyright__text">
+          Copyrights &copy; 2015 by
+          <strong class="footer__copyright__text__strong">POLAR.</strong> All
+          Rights Reserved
+        </p>
+      </section>
+    </footer>
+    <script>
+      const footerFormElement = document.getElementById('footer-form-element');
+      const footerFormInputElement = document.getElementById('footer-email-input');
+      const quotesSectionElement = document.getElementById("quotes-section");
+      const quoteTextElement = document.getElementById('quote-text');
+      const nextQuoteBtn = document.getElementById('next-quote-btn');
+      const prevQuoteBtn = document.getElementById('prev-quote-btn');
+      const menuButton = document.getElementById('menu-button');
+      const menuList = document.getElementById('menu-list');
+
+      const quotesList = [
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias deleniti debitis autem repellendus eum voluptates saepe neque non facere vel consequatur nulla optio, blanditiis perferendis.',
+        'Alias deleniti debitis autem repellendus eum voluptates saepe nenon facere vel consequatur nulla optio, blanditiis perferendis.',
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit neque non facere vel consequatur nulla optio, blanditiis perferendis.'
+      ];
+      
+      let currentQuoteIndex = 0;
+
+      let isMenuVisible = false;
+
+    function showHideMenu() {
+        if(isMenuVisible) {
+          isMenuVisible = false;
+          document.body.classList.remove('no-scroll');
+          menuList.classList.remove('is-visible');
+        } else {
+          isMenuVisible = true;
+          document.body.classList.add('no-scroll');
+          menuList.classList.add('is-visible');
+        }
+      };
+
+      function showNextQuote() {
+        if(currentQuoteIndex < quotesList.length - 1)  {
+          currentQuoteIndex++; 
+        }   
+        quoteTextElement.textContent = quotesList[currentQuoteIndex];
+      };
+
+      function showPrevQuote() {
+        if(currentQuoteIndex > 0) {
+          currentQuoteIndex--; 
+        }       
+        quoteTextElement.textContent = quotesList[currentQuoteIndex];
+      };
+
+      function setInputErrorMsg(inputEl, msg) {
+        const spanElement = inputEl.parentNode.querySelector('span');
+        spanElement.textContent = msg;
+        spanElement.style.display ='inline-block';
+        inputEl.classList.add("is-invalid")
+      }
+
+      function removeInputErrorMsg(inputEl) {
+        const spanElement = inputEl.parentNode.querySelector('span');
+        spanElement.style.display = 'none';
+        inputEl.classList.remove('is-invalid');
+      }
+
+      footerFormElement.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        if(footerFormInputElement.value.length === 0) {
+            setInputErrorMsg(footerFormInputElement, 'Email is required');
+          }
+        });
+
+      footerFormInputElement.addEventListener('keydown', function(event) {
+        if(footerFormInputElement.classList.contains('is-invalid')) {
+          removeInputErrorMsg(footerFormInputElement);
+        }
+      });
+
+      nextQuoteBtn.addEventListener('click', showNextQuote);
+
+      prevQuoteBtn.addEventListener('click', showPrevQuote);
+
+      menuButton.addEventListener('click', showHideMenu);
+    </script>
+  </body>
 </html>

@@ -1,0 +1,365 @@
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./../assets/images/jpg/home-1.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.popular-recipes {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media screen and (max-width: 940px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__content {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 132px 42px;
+
+    @media screen and (max-width: 940px) {
+      padding: 112px 20px;
+    }
+
+    &__title {
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+      font-family: $font-raleway;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 42px;
+      padding-bottom: 16px;
+      position: relative;
+      color: $black;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 75px;
+        background-color: $primary-green;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__description {
+      font-size: 14px;
+      font-family: $font-lora;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+      margin-bottom: 32px;
+      color: $black-two;
+      max-width: 550px;
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.recipe-types {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  @media screen and (max-width: 940px) {
+    grid-template-columns: 1fr;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 28px;
+    row-gap: 36px;
+    padding: 132px 80px;
+    background-color: $light-grey;
+
+    @media screen and (max-width: 1280px) {
+      padding: 112px 35px;
+    }
+
+    @media screen and (max-width: 940px) {
+      padding: 112px 60px;
+      order: 1;
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+      padding: 112px 20px;
+    }
+
+    &__card {
+      position: relative;
+      padding-left: 55px;
+
+      @media screen and (max-width: 940px) {
+        max-width: 280px;
+        margin: 0 auto;
+      }
+
+      @media screen and (max-width: 768px) {
+        max-width: 285px;
+      }
+
+      &__icon {
+        position: absolute;
+        font-size: 30px;
+        color: $black;
+        left: 0;
+      }
+
+      &__title {
+        font-size: 18px;
+        letter-spacing: 0.3px;
+        font-family: $font-raleway;
+        font-weight: 700;
+        color: $black;
+        text-transform: uppercase;
+      }
+
+      &__description {
+        color: $brown-grey;
+        font-size: 13px;
+        font-family: $font-lora;
+        line-height: 24px;
+        letter-spacing: 0.3px;
+        margin-top: 12px;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+
+    @media screen and (max-width: 940px) {
+      order: 2;
+    }
+  }
+}
+
+.our-restaurants {
+  min-height: 95vh;
+  padding: 192px 20px 132px 20px;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 940px) {
+    padding: 132px 60px 112px 60px;
+    min-height: 85vh;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 112px 20px;
+  }
+
+  &__media {
+    position: relative;
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      max-width: 285px;
+    }
+
+    .main-image {
+      width: 100%;
+    }
+
+    .absolute-image {
+      position: absolute;
+      right: -75px;
+      top: -125px;
+
+      @media screen and (max-width: 940px) {
+        width: 127px;
+        right: -45px;
+        top: -77px;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 64px;
+
+    &__title {
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+      font-family: $font-raleway;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 42px;
+      padding-bottom: 16px;
+      position: relative;
+      color: $black;
+      text-align: center;
+
+      &::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 75px;
+        background-color: $primary-green;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__description {
+      font-size: 14px;
+      font-family: $font-lora;
+      line-height: 24px;
+      letter-spacing: 0.3px;
+      margin-bottom: 32px;
+      color: $brown-grey;
+      max-width: 750px;
+      text-align: center;
+    }
+  }
+}
+
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media screen and (max-width: 940px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.restaurant-quotes {
+  background-color: $lime-green;
+  padding: 148px 20px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  @media screen and (max-width: 940px) {
+    padding: 112px 20px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.3px;
+    font-family: $font-raleway;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 42px;
+    padding-bottom: 16px;
+    position: relative;
+    color: $black;
+    text-align: center;
+
+    @media screen and (max-width: 940px) {
+      margin-bottom: 32px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 3px;
+      width: 75px;
+      background-color: $primary-green;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__description {
+    font-size: 24px;
+    font-family: $font-lora;
+    line-height: 36px;
+    letter-spacing: 0.6px;
+    color: $black;
+    position: relative;
+    width: 90%;
+    max-width: 850px;
+    text-align: center;
+
+    @media screen and (max-width: 1280px) {
+      max-width: 700px;
+    }
+
+    @media screen and (max-width: 940px) {
+      font-size: 16px;
+      line-height: 24px;
+      max-width: 480px;
+    }
+
+    .icon {
+      position: absolute;
+      color: #eef6d1;
+      font-size: 48px;
+
+      @media screen and (max-width: 940px) {
+        font-size: 32px;
+      }
+
+      &__right {
+        right: -70px;
+        bottom: -20px;
+
+        @media screen and (max-width: 940px) {
+          right: -32px;
+          bottom: -15px;
+        }
+      }
+
+      &__left {
+        left: -70px;
+        top: -15px;
+
+        @media screen and (max-width: 940px) {
+          left: -32px;
+          top: -15px;
+        }
+      }
+    }
+  }
+
+  &__pagination {
+    align-items: center;
+    margin-top: 75px;
+
+    @media screen and (max-width: 940px) {
+      margin-top: 35px;
+    }
+
+    &__button {
+      padding: 10px 15px;
+      font-size: 26px;
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      outline: none;
+      color: #eef6d1;
+      cursor: pointer;
+
+      &.is-next {
+        color: $white;
+      }
+    }
+  }
+}

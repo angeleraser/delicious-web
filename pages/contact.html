@@ -4,8 +4,398 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/css/main.min.css" />
+    <!--Style Css link-->
+    <link rel="stylesheet" href="./../styles/style.css" />
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/e25c9e9fc4.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Contact</title>
   </head>
-  <body></body>
+  <body>
+    <section class="contact-hero">
+      <header class="header is-flex">
+        <span class="header__logo">
+          Delicious
+        </span>
+        <!--Header -->
+        <ul id="menu-list" class="header__list">
+          <li class="header__list__item">
+            <a href="../index.html">Home</a></li>
+          </li>
+          <li class="header__list__item">
+            About
+          </li>
+          <li class="header__list__item">
+            Recipes
+          </li>
+          <li class="header__list__item">
+            Nutrition
+          </li>
+          <li class="header__list__item">
+            <a href="./blog.html">Blog</a>
+          </li>
+          <li class="header__list__item">
+            Shop
+          </li>
+          <li class="header__list__item is-active">
+            Contact
+          </li>
+          <li class="header__list__item is-shopping-bag">
+            <i class="fas fa-shopping-bag"></i>
+            <div class="count">
+              2
+            </div>
+          </li>
+          <li class="header__list__item is-search">
+            <i class="fas fa-search"></i>
+          </li>
+        </ul>
+        <!--Hamburger Menu -->
+        <button id='menu-button' class="burger-button">
+          <i class="fas fa-bars"></i>
+        </button>
+      </header>
+    </section>
+    <!--Contact main -->
+    <main class="contact-main">
+      <section class="contact-main__form">
+        <h2 class="contact-main__form__title">
+          Drop us a line
+        </h2>
+        <!--Contact main information  -->
+        <form id="contact-form" class="contact-main__form__fields">
+          <fieldset id='contact-fieldset'>
+            <div class="contact-main__form__fields__control is-group">
+              <label for="name">
+                <input id="name-input" type="text" placeholder="Your name" />
+                <span class="invalid-msg">              
+                </span>
+              </label>
+              <label for="email">
+                <input id="email-input" type="email" placeholder="Your email">
+                <span class="invalid-msg">              
+                </span>
+              </label>
+            </div>
+            <div class="contact-main__form__fields__control">
+              <label for="subject">
+                <input id="subject-input" type="text" placeholder="Subject" />
+                <span class="invalid-msg">              
+                </span>
+              </label>
+            </div>
+            <div class="contact-main__form__fields__control">
+              
+              <label for="message">
+                <textarea id="message-input" name="message" placeholder="Message" cols="30" rows="80"></textarea>
+                <span class="invalid-msg">              
+                </span>
+              </label>
+            </div>
+
+            <!--Contact main information button  -->
+            <button class="button" type="submit">
+              Send message
+              <i class="fas fa-long-arrow-alt-right icon"></i>
+            </button>
+          </fieldset>
+
+          <div id="success-msg-element" class="success-message">
+          </div>
+        </form>
+      </section>
+      <section class="contact-main__info">
+        <div class="contact-main__info__details">
+          <h2 class="contact-main__info__details__title">
+            Contact details
+          </h2>
+          <p class="contact-main__info__details__description">
+            Beetroot water spinach okra water chest-nut ricebean
+            pea catsear courgette summer purslane. Water spinach
+            arugula pea tatsoi aubergine spring onion bush tomato
+            kale.
+          </p>
+        </div>
+        <!--Contact main information hours  -->
+        <div class="contact-main__info__schedule">
+          <h3 class="contact-main__info__schedule__title">
+            Working hours
+          </h3>
+          <p class="contact-main__info__schedule__hours">
+            <strong>MON - FRI:</strong> 09:00am - 05:30pm
+          </p>
+          <p class="contact-main__info__schedule__message">
+            Not working on Saturday and Sunday
+          </p>
+        </div>
+        <!--Contact main information address  -->
+        <div class="contact-main__info__address">
+          <h3 class="contact-main__info__address__title">
+            Contact info
+          </h3>
+          <p class="contact-main__info__address__city">
+            A delicious restaurant
+            <br />
+            Toronto, Ontario
+          </p>
+          <p class="contact-main__info__address__email">
+            yum@food.com
+          </p>
+          <p class="contact-main__info__address__phone">
+            +1 234 567 8910
+          </p>
+        </div>
+      </section>
+    </main>
+    <!--Sectional image start  -->
+    <div class="end-image"></div>
+    <!--Footer Section first  -->
+    <footer class="footer is-flex is-flex--column">
+      <section class="footer__content is-flex">
+        <ul class="footer__content__list is-flex--column is-flex">
+          <h2 class="footer__content__list__heading app-name footer-heading">
+            DELICIOUS
+          </h2>
+          <li class="footing footer__content__list__item">
+            Soko radicchio bunya nuts gram dulse silver beet parnsip napa
+            cabbage lotus root sea lettuce brussels srpout cabbage.
+          </li>
+          <li class="footing footer__content__list__item">
+            A delicious restaurant Toronto, Ontario
+          </li>
+          <li class="footing footer__content__list__item">yum@food.com</li>
+          <li class="footing footer__content__list__item">+1 234 567 8910</li>
+        </ul>
+        <!--Footer Section second  -->
+        <ul class="recent-posts footer__content__list is-flex--column is-flex">
+          <h2 class="footer__content__list__heading footer-heading">
+            RECENT POSTS
+          </h2>
+          <li class="footing footer__content__list__item">
+            <a
+              class="footer__content__list__item__link"
+              href="#"              
+              rel="noopener noreferrer"
+              >Beetrot water spinach okra water</a
+            >
+          </li>
+          <li class="footing footer__content__list__item">
+            <a
+              class="footer__content__list__item__link"
+              href="#"              
+              rel="noopener noreferrer"
+              >Chesnut riebean pea catsear courgette</a
+            >
+          </li>
+          <li class="footing footer__content__list__item">
+            <a
+              class="footer__content__list__item__link"
+              href="#"              
+              rel="noopener noreferrer"
+              >Summer purslane spinach arugula pea</a
+            >
+          </li>
+          <li class="footing footer__content__list__item">
+            <a
+              class="footer__content__list__item__link"
+              href="#"              
+              rel="noopener noreferrer"
+              >Tatsol aubergine spring onion bush</a
+            >
+          </li>
+          <li class="footing footer__content__list__item">
+            <a
+              class="footer__content__list__item__link"
+              href="#"              
+              rel="noopener noreferrer"
+              >Tomato kale radicchio turnip chicory</a
+            >
+          </li>
+          <li class="footing footer__content__list__item">
+            <a
+              class="footer__content__list__item__link"
+              href="#"              
+              rel="noopener noreferrer"
+              >Salsify pea sprouts fava bean</a
+            >
+          </li>
+        </ul>
+        <!--Footer Section third  -->
+        <ul
+          class="footer__content__list__form footer__content__list is-flex--column is-flex"
+        >
+          <h2 class="footer__content__list__heading footer-heading">
+            SUBSCRIBE NOW
+          </h2>
+          <!--Footer Section third top  -->
+          <li class="is-flex is-flex--column footer__content__list__form__item">
+            <p class="footer__content__list__form__text">
+              Get all of our newest recipes inmediately at your inbox
+            </p>
+            <!--Footer Section third form  -->
+            <form id="footer-form-element" class="is-flex footer__content__list__form__form-wrapper">
+              <label for="email">
+                <input
+                  type="email"
+                  name="email"
+                  id="footer-email-input"
+                  placeholder="Enter your email"
+                />
+                <span class="invalid-msg">          
+                </span>
+              </label>
+              <button><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+            <!--Footer Section social  -->
+            <ul class="social-networks">
+              <li class="social-networks__item">
+                <a
+                  class="footer__content__list__item__link social-networks__item__link"
+                  href="http://facebook.com"                  
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="social-networks__item">
+                <a
+                  class="footer__content__list__item__link social-networks__item__link"
+                  href="http://twitter.com"                  
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="social-networks__item">
+                <a
+                  class="footer__content__list__item__link social-networks__item__link"
+                  href="http://twitter.com"                  
+                  rel="noopener noreferrer"
+                >
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <!--Footer Section copyright  -->
+      <section class="footer__copyright is-flex is-flex--column">
+        <p class="footer__copyright__text">
+          Copyrights &copy; 2015 by
+          <strong class="footer__copyright__text__strong">POLAR.</strong> All
+          Rights Reserved
+        </p>
+      </section>
+    </footer>
+
+    <script>
+      const contactFormElement = document.getElementById("contact-form");
+      const emailInputElement = document.getElementById("email-input");
+      const fieldsetElement = document.getElementById('contact-fieldset');
+      const footerFormElement = document.getElementById('footer-form-element');
+      const footerFormInputElement = document.getElementById('footer-email-input');
+      const messageInputElement = document.getElementById("message-input");
+      const nameInputElement = document.getElementById("name-input");
+      const subjectInputElement = document.getElementById("subject-input");
+      const successMessageElement = document.getElementById('success-msg-element');
+      const menuButton = document.getElementById('menu-button');
+      const menuList = document.getElementById('menu-list');
+
+      let isMenuVisible = false;
+
+      function setInputErrorMsg(inputEl, msg) {
+        const spanElement = inputEl.parentNode.querySelector('span');
+        spanElement.textContent = msg;
+        spanElement.style.display ='inline-block';
+        inputEl.classList.add("is-invalid")
+    }
+
+    function showHideMenu() {
+        if(isMenuVisible) {
+          isMenuVisible = false;
+          document.body.classList.remove('no-scroll');
+          menuList.classList.remove('is-visible');
+        } else {
+          isMenuVisible = true;
+          document.body.classList.add('no-scroll');
+          menuList.classList.add('is-visible');
+        }
+      };
+
+      function removeInputErrorMsg(inputEl) {
+        const spanElement = inputEl.parentNode.querySelector('span');
+        spanElement.style.display = 'none';
+        inputEl.classList.remove('is-invalid');
+      }
+
+      contactFormElement.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (nameInputElement.value.length === 0) {
+         setInputErrorMsg(nameInputElement, 'Name is required');
+        }
+
+        if (emailInputElement.value.length === 0) {
+          setInputErrorMsg(emailInputElement, 'Email is required');
+        }
+
+        if (subjectInputElement.value.length === 0) {
+          setInputErrorMsg(subjectInputElement, 'Subject is required');
+        }
+
+        if (messageInputElement.value.length === 0) {
+          setInputErrorMsg(messageInputElement, 'Message is required');
+        }
+        
+        if(nameInputElement.value && emailInputElement.value && subjectInputElement.value && messageInputElement.value) {
+          fieldsetElement.style.display = 'none';
+          successMessageElement.textContent = `Thank you for submitting the form ${nameInputElement.value}!`
+          successMessageElement.style.display='inline-block';
+        }
+      });
+
+      footerFormElement.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        if(footerFormInputElement.value.length === 0) {
+          setInputErrorMsg(footerFormInputElement, 'Email is required');
+        }
+      })
+
+      nameInputElement.addEventListener('keydown', function(event) {
+        if(nameInputElement.classList.contains('is-invalid')) {
+          removeInputErrorMsg(nameInputElement);
+        }
+      });
+
+      footerFormInputElement.addEventListener('keydown', function(event) {
+        if(footerFormInputElement.classList.contains('is-invalid')) {
+          removeInputErrorMsg(footerFormInputElement);
+        }
+      });
+
+      emailInputElement.addEventListener('keydown', function(event) {
+        if(emailInputElement.classList.contains('is-invalid')) {
+          removeInputErrorMsg(emailInputElement);
+        }
+      });
+
+      subjectInputElement.addEventListener('keydown', function(event) {
+        if(subjectInputElement.classList.contains('is-invalid')) {
+          removeInputErrorMsg(subjectInputElement);
+        }
+      });
+
+      messageInputElement.addEventListener('keydown', function(event) {
+        if(messageInputElement.classList.contains('is-invalid')) {
+          removeInputErrorMsg(messageInputElement);
+        }
+      });
+
+      menuButton.addEventListener('click', showHideMenu);
+    </script>
+  </body>
 </html>

@@ -1,0 +1,23 @@
+// Variables
+@import "./variables";
+
+// Setup, Fonts & flex
+@import "./setup";
+@import "./fonts";
+@import "./typography";
+@import "./_helpers";
+
+// Header & Footer
+@import "./header";
+
+@import "./footer";
+
+// Posts components
+@import "./button";
+@import "./related-post";
+@import "./comment";
+
+// Pages Main content
+@import "./home";
+@import "./blog";
+@import "./contact";

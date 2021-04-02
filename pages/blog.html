@@ -1,11 +1,497 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/css/main.min.css" />
-    <title>Blog</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Style Css-->
+  <link rel="stylesheet" href="./../styles/style.css" />
+  <!--Font Awesome Link-->
+  <script src="https://kit.fontawesome.com/e25c9e9fc4.js"
+    crossorigin="anonymous"></script>
+  <title>Blog</title>
+</head>
+
+<body>
+  <section class="blog-hero">
+    <!-- Header -->
+    <header class="header is-flex">
+      <span class="header__logo"> Delicious </span>
+      <ul id="menu-list" class="header__list">
+        <li class="header__list__item"><a href="../index.html">Home</a></li>
+        <li class="header__list__item">About</li>
+        <li class="header__list__item">Recipes</li>
+        <li class="header__list__item">Nutrition</li>
+        <li class="header__list__item is-active">Blog</li>
+        <li class="header__list__item">Shop</li>
+        <li class="header__list__item"><a href="./contact.html">Contact</a></li>
+        <li class="header__list__item is-shopping-bag">
+          <i class="fas fa-shopping-bag"></i>
+          <div class="count">2</div>
+        </li>
+        <li class="header__list__item is-search">
+          <i class="fas fa-search"></i>
+        </li>
+      </ul>
+      <button id='menu-button' class="burger-button">
+        <i class="fas fa-bars"></i>
+      </button>
+    </header>
+  </section>
+  <main class="blog-main-content is-flex is-flex--column">
+    <!-- Main post -->
+    <section class="post-container is-flex is-flex--column">
+      <article class="post">
+        <header class="post__header">
+          <h1 class="post__header__title">PINEAPPLE CHICKEN</h1>
+          <div class="post__header__date">
+            Posted at July 11, 2018 | by Admin | in Recipes
+          </div>
+        </header>
+        <!-- Posts 1 -->
+        <main class="post__content">
+          <p class="post__content__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+            perspiciatis, quos, provident beatae saepe inventore deleniti
+            recusandae non repellendus commodi ipsum reiciendis veritatis.
+            Dicta non eveniet quae explicabo recusandae soluta.
+          </p>
+          <!-- Posts 2 -->
+          <p class="post__content__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+            perspiciatis, quos, provident beatae saepe inventore deleniti
+            recusandae non repellendus commodi ipsum reiciendis veritatis.
+            Dicta non eveniet quae explicabo recusandae soluta.
+          </p>
+          <!-- Posts 3 -->
+          <p class="post__content__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+            perspiciatis, quos, provident beatae saepe inventore deleniti
+            recusandae non repellendus commodi ipsum reiciendis veritatis.
+            Dicta non eveniet quae explicabo recusandae soluta.
+          </p>
+          <!-- Posts 4 -->
+          <p class="post__content__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+            perspiciatis, quos, provident beatae saepe inventore deleniti
+            recusandae non repellendus commodi ipsum reiciendis veritatis.
+            Dicta non eveniet quae explicabo recusandae soluta.
+          </p>
+          <!-- Posts 5 -->
+          <p class="post__content__text">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+            perspiciatis, quos, provident beatae saepe inventore deleniti
+            recusandae non repellendus commodi ipsum reiciendis veritatis.
+            Dicta non eveniet quae explicabo recusandae soluta.
+          </p>
+        </main>
+        <!-- Extended Footer -->
+        <section class="post__footer">
+          <ul class="post__footer__tags post__footer__list is-flex">
+            <h3 class="post__footer__list__heading">TAGS:</h3>
+            <!-- Footer tags -->
+            <li class="post__footer__tags__item">
+              <a ref="noopener noreferrer" href="#"
+                class="post__footer__tags__item__link post__footer__list__item__link">Recipes,</a>
+            </li>
+            <li class="post__footer__tags__item">
+              <a ref="noopener noreferrer" href="#"
+                class="post__footer__tags__item__link post__footer__list__item__link">Chicken,</a>
+            </li>
+            <li class="post__footer__tags__item">
+              <a ref="noopener noreferrer" href="#"
+                class="post__footer__tags__item__link post__footer__list__item__link">Pineapple,</a>
+            </li>
+            <li class="post__footer__tags__item">
+              <a ref="noopener noreferrer" href="#"
+                class="post__footer__tags__item__link post__footer__list__item__link">Mexican</a>
+            </li>
+          </ul>
+          <!-- Social Share Footer -->
+          <ul class="post__footer__share post__footer__list is-flex">
+            <h3 class="post__footer__list__heading">SHARE:</h3>
+            <!-- Social Share Footer -->
+            <li class="post__footer__share__item">
+              <a ref="noopener noreferrer" href="#"
+                class="post__footer__share__item__link post__footer__list__item__link">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="post__footer__share__item">
+              <a ref="noopener noreferrer" href="#"
+                class="post__footer__share__item__link post__footer__list__item__link">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="post__footer__share__item">
+              <a ref="noopener noreferrer" href="#"
+                class="post__footer__share__item__link post__footer__list__item__link">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+          <!-- Social Author Footer -->
+          <section class="post__footer__author is-flex">
+            <div class="post__footer__author__image is-flex is-flex--column">
+              <img src="../assets/images/jpg/blog-2.jpeg" alt="Sally Lucas" />
+              <h2 class="post__footer__author__image__name">Sally Lucas</h2>
+            </div>
+            <!-- Social Author About Footer -->
+            <div class="post__footer__author__about">
+              <h2 class="post__footer__author__about__author-name">
+                Sally Lucas
+              </h2>
+              <!-- Social Author Description -->
+              <p class="post__footer__author__about__author-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti libero nisi cupiditate! Ea nihil, asperiores ipsam
+                delectus tempore, aliquid quae ullam nesciunt molestiae
+                officiis earum, fugiat hic vitae architecto nulla.
+              </p>
+              <!-- Social Author About -->
+              <p class="post__footer__author__about__author-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Corrupti libero nisi cupiditate! Ea nihil, asperiores ipsam
+                delectus tempore, aliquid quae ullam nesciunt molestiae
+                officiis earum, fugiat hic vitae architecto nulla.
+              </p>
+            </div>
+          </section>
+        </section>
+      </article>
+    </section>
+    <!-- Related posts -->
+    <section class="related-posts is-flex is-flex--column">
+      <h2 class="related-posts__heading">RELATED POSTS</h2>
+      <!-- Related posts wrapper -->
+      <div class="related-posts__posts-wrapper is-flex">
+        <article class="related-post-item">
+          <a href="#" rel="noopener noreferrer"
+            class="related-post-item__image">
+            <img src="../assets/images/jpg/blog-3.jpeg"
+              alt="A pink cake with cream" />
+          </a>
+          <div class="related-post-item__content">
+            <h1 class="related-post-item__content__title">
+              How to bake the perfect cake
+            </h1>
+            <span class="related-post-item__content__date">
+              July 11, 2018 | by
+              <a class="related-post-item__content__date__link" href="#"
+                rel="noopener noreferrer">Admin</a>
+              | in
+              <a class="related-post-item__content__date__link" href="#"
+                rel="noopener noreferrer">Recipes</a>
+            </span>
+          </div>
+        </article>
+        <!-- Related posts second -->
+        <article class="related-post-item">
+          <a href="#" rel="noopener noreferrer"
+            class="related-post-item__image">
+            <img src="../assets/images/jpg/blog-4.jpeg"
+              alt="A pink cake with cream" />
+          </a>
+          <div class="related-post-item__content">
+            <h1 class="related-post-item__content__title">Floral Cupcakes</h1>
+            <span class="related-post-item__content__date">
+              July 19, 2018 | by
+              <a class="related-post-item__content__date__link" href="#"
+                rel="noopener noreferrer">Admin</a>
+              | in
+              <a class="related-post-item__content__date__link" href="#"
+                rel="noopener noreferrer">Recipes</a>
+            </span>
+          </div>
+        </article>
+        <!-- Related posts third image -->
+        <article class="related-post-item">
+          <a href="#" rel="noopener noreferrer"
+            class="related-post-item__image">
+            <img src="../assets/images/jpg/blog-5.jpeg"
+              alt="A pink cake with cream" />
+          </a>
+          <div class="related-post-item__content">
+            <h1 class="related-post-item__content__title">
+              Single post with image
+            </h1>
+            <span class="related-post-item__content__date">
+              July 22, 2018 | by
+              <a class="related-post-item__content__date__link" href="#"
+                rel="noopener noreferrer">Admin</a>
+              | in
+              <a class="related-post-item__content__date__link" href="#"
+                rel="noopener noreferrer">Recipes</a>
+            </span>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Comments -->
+    <section class="blog-comments is-flex--column is-flex">
+      <h2 class="blog-comments__heading">02 Comments</h2>
+      <!-- Comments Wrapper -->
+      <div class="blog-comments__comments-wrapper">
+        <div class="comment-item">
+          <div class="comment-item__author-image">
+            <img src="../assets/images/jpg/blog-6.jpeg" alt="Lucatony Avaro" />
+          </div>
+          <div class="comment-item__content">
+            <div class="comment-item__content__author">
+              <div class="comment-item__content__author__image">
+                <img src="../assets/images/jpg/blog-6.jpeg"
+                  alt="Lucatony Avaro" />
+              </div>
+              <h3 class="comment-item__content__author__name">
+                Lucatony Avaro
+              </h3>
+              -
+              <span class="comment-item__content__author__profession">
+                Web Developer
+              </span>
+            </div>
+            <p class="comment-item__content__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+              sed inventore numquam, consequatur pariatur ad odit! Vitae
+              assumenda aperiam perferendis placeat maxime, saepe
+              reprehenderit explicabo numquam aut facere impedit at.
+            </p>
+            <span class="comment-item__content__date">
+              Jul 17, 2016 at 15 hours ago
+            </span>
+          </div>
+        </div>
+        <!-- Comment Author Image -->
+        <div class="comment-item">
+          <div class="comment-item__author-image">
+            <img src="../assets/images/jpg/blog-7.jpeg" alt="Brian Hudson" />
+          </div>
+          <div class="comment-item__content">
+            <div class="comment-item__content__author">
+              <div class="comment-item__content__author__image">
+                <img src="../assets/images/jpg/blog-7.jpeg"
+                  alt="Brian Hudson" />
+              </div>
+              <h3 class="comment-item__content__author__name">
+                Brian Hudson
+              </h3>
+              -
+              <span class="comment-item__content__author__profession">
+                Web Developer
+              </span>
+            </div>
+            <p class="comment-item__content__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio
+              sed inventore numquam, consequatur pariatur ad odit! Vitae
+              assumenda aperiam perferendis placeat maxime, saepe
+              reprehenderit explicabo numquam aut facere impedit at.
+            </p>
+            <span class="comment-item__content__date">
+              Jul 17, 2016 at 15 hours ago
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Comment Required -->
+    <section class="leave-comment">
+      <h2 class="leave-comment__heading">Leave a comment</h2>
+      <span class="leave-comment__helper-text">
+        Your email addres will not be published. Required fields are marked *
+      </span>
+      <!-- Comment Form -->
+      <form id='comment-form' class="leave-comment__form">
+        <fieldset class="leave-comment__form__fieldset">
+          <label for="name" class="leave-comment__form__fieldset__label">
+            <input id="name-input" name="name" placeholder="Name *"
+              type="text"
+              class="leave-comment__form__fieldset__label__input" />
+            <span class="leave-comment__form__fieldset__label__invalid-msg">              
+              </span>
+          </label>
+          <label for="email" class="leave-comment__form__fieldset__label">
+            <input id="email-input" name="email" placeholder="Email *"
+              type="text" class="leave-comment__form__fieldset__label__input" />
+              <span class="leave-comment__form__fieldset__label__invalid-msg">              
+              </span>
+          </label>
+          <label for="website" class="leave-comment__form__fieldset__label">
+            <input id="website-input" name="website" placeholder="Website"
+              type="text" class="leave-comment__form__fieldset__label__input" />
+              <span class="leave-comment__form__fieldset__label__invalid-msg">              
+              </span>
+          </label>
+          <!-- Label for comment -->
+          <label for="comment"
+            class="leave-comment__form__fieldset__label leave-comment__form__fieldset__label-textarea">
+            <textarea id="comment-input" placeholder="Comment" name="comment"
+              type="text"
+              class="leave-comment__form__fieldset__label__input"></textarea>
+            <span class="leave-comment__form__fieldset__label__invalid-msg">              
+            </span>
+          </label>
+        </fieldset>
+        <!-- Button submit comment -->
+        <button type="submit" class="button button--success">
+          Submit Comment
+        </button>
+      </form>
+    </section>
+  </main>
+  <!--Footer First -->
+  <footer class="footer is-flex is-flex--column">
+    <section class="footer__content is-flex">
+      <ul class="footer__content__list is-flex--column is-flex">
+        <h2 class="footer__content__list__heading app-name footer-heading">
+          DELICIOUS
+        </h2>
+        <li class="footing footer__content__list__item">
+          Soko radicchio bunya nuts gram dulse silver beet parnsip napa
+          cabbage lotus root sea lettuce brussels srpout cabbage.
+        </li>
+        <li class="footing footer__content__list__item">
+          A delicious restaurant Toronto, Ontario
+        </li>
+        <li class="footing footer__content__list__item">yum@food.com</li>
+        <li class="footing footer__content__list__item">+1 234 567 8910</li>
+      </ul>
+      <!--Footer Second -->
+      <ul class="recent-posts footer__content__list is-flex--column is-flex">
+        <h2 class="footer__content__list__heading footer-heading">
+          RECENT POSTS
+        </h2>
+        <li class="footing footer__content__list__item">
+          <a class="footer__content__list__item__link" href="#"
+            rel="noopener noreferrer">Beetrot water spinach okra water</a>
+        </li>
+        <li class="footing footer__content__list__item">
+          <a class="footer__content__list__item__link" href="#"
+            rel="noopener noreferrer">Chesnut riebean pea catsear courgette</a>
+        </li>
+        <li class="footing footer__content__list__item">
+          <a class="footer__content__list__item__link" href="#"
+            rel="noopener noreferrer">Summer purslane spinach arugula pea</a>
+        </li>
+        <li class="footing footer__content__list__item">
+          <a class="footer__content__list__item__link" href="#"
+            rel="noopener noreferrer">Tatsol aubergine spring onion bush</a>
+        </li>
+        <li class="footing footer__content__list__item">
+          <a class="footer__content__list__item__link" href="#"
+            rel="noopener noreferrer">Tomato kale radicchio turnip chicory</a>
+        </li>
+        <li class="footing footer__content__list__item">
+          <a class="footer__content__list__item__link" href="#"
+            rel="noopener noreferrer">Salsify pea sprouts fava bean</a>
+        </li>
+      </ul>
+      <!--Footer Third - no social -->
+      <ul
+        class="footer__content__list__form footer__content__list is-flex--column is-flex">
+        <h2 class="footer__content__list__heading footer-heading">
+          SUBSCRIBE NOW
+        </h2>
+            <form id="footer-form-element" class="is-flex footer__content__list__form__form-wrapper">
+              <label for="email">
+                <input
+                  type="email"
+                  name="email"
+                  id="footer-email-input"
+                  placeholder="Enter your email"
+                />
+                <span class="invalid-msg">          
+                </span>
+              </label>
+              <button><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+    </section>
+    <section class="footer__copyright is-flex is-flex--column">
+      <!--Footer Copyright -->
+      <p class="footer__copyright__text">
+        Copyrights &copy; 2015 by
+        <strong class="footer__copyright__text__strong">POLAR.</strong> All
+        Rights Reserved
+      </p>
+    </section>
+  </footer>
+
+  <script>
+    const commentFormElement = document.getElementById("comment-form");
+    const nameInputElement = document.getElementById("name-input");
+    const emailInputElement = document.getElementById("email-input");
+    const footerFormElement = document.getElementById('footer-form-element');
+    const footerFormInputElement = document.getElementById('footer-email-input');
+    const menuButton = document.getElementById('menu-button');
+    const menuList = document.getElementById('menu-list');
+
+    let isMenuVisible = false;
+
+    function setInputErrorMsg(inputEl, msg) {
+      const spanElement = inputEl.parentNode.querySelector('span');
+      spanElement.textContent = msg;
+      spanElement.style.display ='inline-block';
+      inputEl.classList.add("is-invalid")
+    }
+
+    function removeInputErrorMsg(inputEl) {
+      const spanElement = inputEl.parentNode.querySelector('span');
+      spanElement.style.display = 'none';
+      inputEl.classList.remove('is-invalid');
+    }
+    
+    function showHideMenu() {
+        if(isMenuVisible) {
+          isMenuVisible = false;
+          document.body.classList.remove('no-scroll');
+          menuList.classList.remove('is-visible');
+        } else {
+          isMenuVisible = true;
+          document.body.classList.add('no-scroll');
+          menuList.classList.add('is-visible');
+        }
+      };
+
+    commentFormElement.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      if (nameInputElement.value.length === 0) {
+        setInputErrorMsg(nameInputElement, 'Name is required');
+      }
+
+      if (emailInputElement.value.length === 0) {
+        setInputErrorMsg(emailInputElement, 'Email is required');
+      }
+    });
+
+    footerFormElement.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      if(footerFormInputElement.value.length === 0) {
+          setInputErrorMsg(footerFormInputElement, 'Email is required');
+      }
+    });
+
+    footerFormInputElement.addEventListener('keydown', function(event) {
+      if(footerFormInputElement.classList.contains('is-invalid')) {
+        removeInputErrorMsg(footerFormInputElement);
+      }
+    });
+
+    nameInputElement.addEventListener('keydown', function(event) {
+      if(nameInputElement.classList.contains('is-invalid')) {
+        removeInputErrorMsg(nameInputElement);
+      }
+    })
+
+    emailInputElement.addEventListener('keydown', function(event) {
+      if(emailInputElement.classList.contains('is-invalid')) {
+        removeInputErrorMsg(emailInputElement);
+      }
+    });
+
+    menuButton.addEventListener('click', showHideMenu);
+  </script>
+</body>
+
 </html>

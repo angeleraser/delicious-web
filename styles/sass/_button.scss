@@ -1,0 +1,15 @@
+.button {
+  border: none;
+  box-shadow: none;
+  color: $black;
+  padding: 18px 32px;
+  font-size: 18px;
+  font-family: $font-raleway;
+  font-weight: 500;
+  cursor: pointer;
+
+  &--success {
+    background: $primary-green;
+    color: #fff;
+  }
+}
